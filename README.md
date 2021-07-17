@@ -1,6 +1,6 @@
 # HackerSir X MeetCreate
 
-使用者填完標單後，自動在行事曆上生成事件，並且在 Line Notify 和 Discord 上公告。
+使用者填完會議表單後，自動在行事曆上生成事件，並且在 Line Notify 和 Discord 上公告。
 
 ## 功能
 - 自動在 Google Calendar 生成一個會議事件。
@@ -61,6 +61,3 @@
 
 - Line Notify
 ![line](Picture/line.png)
-
-
-
