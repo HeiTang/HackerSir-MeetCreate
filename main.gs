@@ -7,16 +7,16 @@ function  onOpen(){
 }
 
 function addEvents(){
-  // 讀取「第七屆會議列表」
-  var Meet = sheet_7th_Meet;
-  var sheet_List = Meet.getSheetByName('第七屆會議列表');
+  // 讀取「會議列表」
+  var Meet = SpreadsheetApp.openById(GoogleSheetToken_Meetlist);
+  var sheet_List = Meet.getSheetByName('會議列表');
   var range = sheet_List.getDataRange();
   var values = range.getValues();
   
-  // 讀取「第七屆 社團幹部 - 20200630 版」中幹部 Mail，並合併成字串
-  var Directory = sheet_7th_Directory;
+  // 讀取「通訊錄」
+  var Directory = SpreadsheetApp.openById(GoogleSheetToken_Contactlist);
   var values1 = Directory.getRange('通訊錄!G2:G26').getValues();
-  var guests = 'heitang.me@gmail.com';
+  var guests = '';
   for (var i = 0; i < values1.length; i++){
     guests = guests + ',' + values1[i][0];
   }
@@ -26,7 +26,7 @@ function addEvents(){
     var Status = sheet_List.getRange(i+1,9).getValues();
     if (Status != '已發布'){
       // 建立 Google Calendar 事件
-      var calendar = calendar_HackerSir;
+      var calendar = CalendarApp.getCalendarById(GoogleCalendarToken);
       var eventTitle = '[' + values[i][2] + '] ' + values[i][1];
       var startTime = values[i][5];
       var endTime = values[i][6];

@@ -1,11 +1,11 @@
-// Line Notify 、 Discord Webhook : 通知
-var lineToken = '';
-var discordToken = '';
+// Line Notify 、 Discord Webhook
+LineNotifyToken = 'YOUR_LINENOTIFY_TOKEN';
+DiscordWebhookToken = 'YOUR_DISCORD_WEBHOOK_TOKEN';
 
-// Excel 「逢甲大學黑客社 會議建立」 > 「第七屆會議列表」
-var sheet_7th_Meet = SpreadsheetApp.openById('');
-// Excel 「第七屆 社團幹部 - 20200630 版」 > 「通訊錄」
-var sheet_7th_Directory = SpreadsheetApp.openById('');
+// Google Sheet 會議列表
+GoogleSheetId_Meetlist = 'YOUR_MEET_SHEET_Id';
+// Google Sheet 通訊錄
+GoogleSheetId_Contactlist = 'YOUR_CONTACT_SHEET_Id';
 
-// Google Calendar「黑客社幹部行事曆」
-var calendar_HackerSir = CalendarApp.getCalendarById('');
+// Google Calendar
+GoogleCalendarId = 'YOUR_CALENDAR_Id';
