@@ -44,4 +44,23 @@
     | addEvents  | 上端 | 試算表 | 提交表單時  | 
 
 ## DEMO
+- Google 表單
+![form](Picture/form.png)
+
+- Google 試算表
+![spreadsheet](Picture/spreadsheet.png)
+
+
+- Google 行事曆
+![calendar](Picture/calendar.png)
+
+
+- Discord
+![discord](Picture/discord.png)
+
+
+- Line Notify
+![line](Picture/line.png)
+
+
 
